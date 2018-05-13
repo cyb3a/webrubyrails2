@@ -1,0 +1,15 @@
+<p>
+  <strong>Name:</strong>
+  <%= attendance.name %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= attendance.comment %>
+</p>
+
+<p>
+  <%= link_to 'Remove User', [attendance.event, attendance],
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+</p>
